@@ -37,7 +37,7 @@ jobs:
         # SonarQube server URL
         url: http://40.122.203.52:9000/
         # Authentication token of a SonarQube user
-       token: 784693611a572c144e1e5d4295706d2c50c98c57
+        token: 784693611a572c144e1e5d4295706d2c50c98c57
       run: mvn sonar:sonar
 
      
