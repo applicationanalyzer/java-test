@@ -35,9 +35,9 @@ jobs:
       uses: monstar-lab-oss/sonarqube-github-action@v1.0.1
       with:
         # SonarQube server URL
-        url: http://40.122.203.52:9000/
+        url: http://40.122.118.186:9000/
         # Authentication token of a SonarQube user
-        token: 784693611a572c144e1e5d4295706d2c50c98c57
+        token: fa98157609a1d31b3942b5b48709edc908623946
 
 
      
