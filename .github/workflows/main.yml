@@ -12,4 +12,4 @@ jobs:
         host: http://40.122.118.186:9000/
         login: fa98157609a1d31b3942b5b48709edc908623946
         projectBaseDir: ./target
-
+        projectKey: MyWebApp
