@@ -38,6 +38,7 @@ jobs:
         url: http://40.122.118.186:9000/
         # Authentication token of a SonarQube user
         token: fa98157609a1d31b3942b5b48709edc908623946
+        sonar.projectKey: test
 
 
      
