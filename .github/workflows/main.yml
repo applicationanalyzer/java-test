@@ -1,0 +1,15 @@
+on: push
+name: Main Workflow
+jobs:
+  sonarQubeTrigger:
+    name: SonarQube Trigger
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: SonarQube Scan
+      uses: kitabisa/sonarqube-action@master
+      with:
+        host: http://40.122.118.186:9000/
+        login: fa98157609a1d31b3942b5b48709edc908623946
+        projectBaseDir: ./target
+        projectKey: MyWebApp
