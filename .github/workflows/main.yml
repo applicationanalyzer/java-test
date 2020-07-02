@@ -1,15 +1,17 @@
-on: push
-name: Main Workflow
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ] 
 jobs:
-  sonarQubeTrigger:
-    name: SonarQube Trigger
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@master
-    - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@master
-      with:
-        host: http://172.16.0.53:9000
-        login: 6986f485119f5c4e22ab54d7346ecb82631fe01d
-        projectBaseDir: ./target
-        projectKey: MyWebApp
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+     - uses: actions/checkout@v2
+     - name: Run a one-line script
+       run: mvn sonar:sonar /d:sonar.host.url=http://172.16.0.53:9000 /d:sonar.login=admin /d:sonar.password=Welcome5ggk /k:webapp /n:webapp";
+    
