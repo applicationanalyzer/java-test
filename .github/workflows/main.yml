@@ -9,7 +9,8 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
       with:
-        host: http://40.122.118.186:9000/
-        login: fa98157609a1d31b3942b5b48709edc908623946
+        host: http://172.16.0.53:9000
+        login: admin
+        password: Welcome5ggk
         projectBaseDir: ./target
         projectKey: MyWebApp
