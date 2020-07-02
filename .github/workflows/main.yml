@@ -13,5 +13,5 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
      - uses: actions/checkout@v2
      - name: Run a one-line script
-       run: mvn sonar:sonar /d:sonar.host.url=http://172.16.0.53:9000 /d:sonar.login=admin /d:sonar.password=Welcome5ggk /k:webapp /n:webapp";
+       run: mvn sonar:sonar /d:sonar.host.url=http://172.16.0.53:9000 /d:sonar.login=admin /d:sonar.password=Welcome5ggk /k:webapp /n:webapp
     
