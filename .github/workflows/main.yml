@@ -10,7 +10,6 @@ jobs:
       uses: kitabisa/sonarqube-action@master
       with:
         host: http://172.16.0.53:9000
-        login: admin
-        password: Welcome5ggk
+        login: 6986f485119f5c4e22ab54d7346ecb82631fe01d
         projectBaseDir: ./target
         projectKey: MyWebApp
